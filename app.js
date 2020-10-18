@@ -5,8 +5,12 @@
 var person = {
     name: 'Maximilian',
     age: 30,
-    hobbies: ['Sports', 'Cooking']
+    hobbies: ['Sports', 'Cooking'],
+    role: [2, 'author']
 };
+// pushing is allowed here because its an exception
+person.role.push('admin');
+// person.role[1] = 10
 var favoriteActivities;
 favoriteActivities = ["Football"];
 console.log(person.name);
