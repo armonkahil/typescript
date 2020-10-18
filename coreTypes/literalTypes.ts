@@ -1,8 +1,4 @@
-// aliases
-type Combinable = number | string 
-type ConversionDescriptor = 'as-number' | 'as-text'
-  
-const combine = (input1: Combinable, input2: Combinable, resultConversion: ConversionDescriptor) => {
+const combine = (input1: number | string, input2: number | string, resultConversion: 'as-number' | 'as-text') => {
   let result
   if (typeof input1 === 'number' && typeof input2 === 'number' || resultConversion === 'as-number') {
     // +input is shorthand for parseFloat()
